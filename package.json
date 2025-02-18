@@ -1,16 +1,12 @@
 {
-  "name": "profile-rebuild",
+  "name": "olaolu-portfolio",
   "version": "1.0.0",
-  "main": "app.js",
+  "private": true,
   "license": "MIT",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html -d public -p 3000",
-    "dev": "rimraf \"./public\" \"./cache\" && yarn start",
-    "build": "rimraf dist && parcel build src/index.html -d dist --public-url ./",
-    "clean": "rimraf ./public ./cache ./dist",
-    "lint": "eslint src/**/*.{js,jsx}",
-    "format": "prettier --write \"src/**/*.{js,jsx,json,css,scss}\"",
-    "serve": "serve dist -s -n -p 3000"
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url ./"
   },
   "keywords": [
     "portfolio",
@@ -22,20 +18,14 @@
     "url": "https://github.com/OlaoluPortfolio"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.7",
-    "@babel/plugin-transform-runtime": "^7.23.7",
-    "@babel/runtime-corejs3": "^7.23.7",
-    "@parcel/transformer-sass": "^2.11.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "parcel": "^2.11.0",
-    "prettier": "^3.1.1",
-    "rimraf": "^5.0.5",
-    "serve": "^14.2.1"
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.24",
+    "sass": "^1.63.6"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.5.0",
-    "gsap": "^3.12.4",
+    "@vercel/analytics": "^1.0.1",
+    "gsap": "^3.12.1",
     "locomotive-scroll": "^4.1.4",
     "lodash": "^4.17.21"
   },
