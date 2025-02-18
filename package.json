@@ -21,10 +21,12 @@
     "@parcel/transformer-sass": "^2.9.3",
     "parcel": "^2.9.3",
     "postcss": "^8.4.24",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "svgo": "^3.3.2"
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
+    "cosmiconfig": "^9.0.0",
     "gsap": "^3.12.1",
     "locomotive-scroll": "^4.1.4",
     "lodash": "^4.17.21"
